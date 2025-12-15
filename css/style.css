@@ -5,6 +5,11 @@
     --accent: #00a8ff;
     --dark: #001428;
     --light: #f8f9fa;
+
+    /* START MODIFICATION: Zenith Wealth Colors */
+    --zenith-orange: #f6951f; /* สีส้ม #f6951f*/
+    --wealth-blue: #152a5c;   /* สีน้ำเงินเข้ม #152a5c*/
+    /* END MODIFICATION */
 }
 
 /* ============ Base Styles ============ */
@@ -32,6 +37,22 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
+/* START MODIFICATION: Add Zenith Wealth Styles */
+.text-zenith-orange {
+    color: var(--zenith-orange);
+}
+.text-wealth-blue {
+    color: var(--wealth-blue);
+}
+.gradient-zenith-wealth {
+    background: linear-gradient(90deg, var(--zenith-orange) 0%, var(--wealth-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* END MODIFICATION: Add Zenith Wealth Styles */
+
 
 /* ============ Animations Keyframes ============ */
 @keyframes float {
